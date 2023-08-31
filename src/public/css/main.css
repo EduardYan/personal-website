@@ -1,0 +1,91 @@
+html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* background-color: #793fdf; */
+  background-color: #9BABB8;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#principalTitle {
+  text-decoration: none;
+  text-shadow: 4px 4px 4px rgba(243, 235, 235, 0.2);
+  color: #f1f0e8;
+  font-family: 'Borel', cursive;
+}
+
+.header #logo {
+  margin-left: 45%;
+  position: relative;
+}
+
+.header #logo img {
+  width: 120px;
+  height: 120px;
+  top: 0;
+  left: 0;
+  animation: rotate 5s linear infinite;
+}
+
+/* rotate the logo image */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-gap: 1rem;
+}
+
+.content #about {
+  height: 11%;
+  position: sticky;
+  left: 45%; /* asegura que la columna se mantenga a la derecha de la columna 1 */
+  top: 0;
+}
+
+.content #projects #projects-text {
+  text-shadow: 4px 4px 4px rgba(243, 235, 235, 0.2);
+  color: #f1f0e8;
+}
+
+.content .card .card-header {
+  background-color: #EEE3CB;
+}
+
+.content .card .card-body .socials-links ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.content .card .card-body .socials-links ul li {
+  font-size: 3.5rem;
+  margin: 0 1rem;
+}
+
+.content .card .card-body .socials-links ul li a #github-link {
+  color: #040d12;
+}
+
+.content .card .card-body .socials-links ul li a #facebook-link {
+  color: #0e21a0;
+}
