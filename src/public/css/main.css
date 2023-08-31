@@ -7,7 +7,7 @@ body {
 
 body {
   /* background-color: #793fdf; */
-  background-color: #9BABB8;
+  background-color: #9babb8;
 }
 
 .header {
@@ -21,7 +21,7 @@ body {
   text-decoration: none;
   text-shadow: 4px 4px 4px rgba(243, 235, 235, 0.2);
   color: #f1f0e8;
-  font-family: 'Borel', cursive;
+  font-family: "Acme", sans-serif;
 }
 
 .header #logo {
@@ -63,10 +63,11 @@ body {
 .content #projects #projects-text {
   text-shadow: 4px 4px 4px rgba(243, 235, 235, 0.2);
   color: #f1f0e8;
+  font-family: "Acme", sans-serif;
 }
 
 .content .card .card-header {
-  background-color: #EEE3CB;
+  background-color: #eee3cb;
 }
 
 .content .card .card-body .socials-links ul {

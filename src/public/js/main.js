@@ -4,6 +4,7 @@ AOS.init({
   duration: 1500,
 });
 
+//maquine writer effect
 new TypeIt("#projects-text", {
   speed: 70,
   loop: false,
