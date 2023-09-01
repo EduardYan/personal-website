@@ -2,14 +2,14 @@ const express = require("express");
 const morgan = require("morgan");
 const path = require("path");
 const { getPort } = require("./src/functions/start");
-require("ejs")
+require("ejs");
 
 const app = express();
 
 //settings
 app.set("port", getPort());
-app.set("views", path.join(__dirname, "src/views"))
-app.set("view engine", "ejs")
+app.set("views", path.join(__dirname, "src/views"));
+app.set("view engine", "ejs");
 
 //middlewares
 app.use(morgan("dev"));
@@ -18,8 +18,7 @@ app.use(morgan("dev"));
 app.use("/public", express.static(path.join(__dirname, "src/public")));
 
 //routes
-const principalRoutes = require("./src/routes/principal")
-app.use(principalRoutes)
+const principalRoutes = require("./src/routes/principal");
+app.use(principalRoutes);
 
-
-app.listen(app.get("port"));
+app.listen(app.get("port"), "0.0.0.0");
