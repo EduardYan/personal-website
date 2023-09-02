@@ -6,8 +6,7 @@ body {
 }
 
 body {
-  /* background-color: #793fdf; */
-  background-color: #9babb8;
+  background-color: #512b81;
 }
 
 .header {
@@ -23,11 +22,11 @@ body {
   text-decoration: none;
   text-shadow: 4px 4px 4px rgba(243, 235, 235, 0.2);
   color: #f1f0e8;
-  font-family: "Acme", sans-serif;
+  font-family: "ABeeZee", sans-serif;
 }
 
 .header #logo {
-  margin-left: 45%;
+  margin-left: 40%;
   position: relative;
 }
 
@@ -50,9 +49,6 @@ body {
 }
 
 .content {
-  /* display: grid;
-  grid-template-columns: 55% 45%;
-  grid-gap: 1rem; */
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -67,6 +63,18 @@ body {
   flex: 1;
 }
 
+.content #about .card-header {
+  background-color: #8cabff;
+}
+
+.content #about .card-header h1 {
+  font-family: "ABeeZee", sans-serif;
+  color: #f1f0e8;
+}
+.content #about .card-body p {
+  font-family: "ABeeZee", sans-serif;
+}
+
 .content #projects {
   flex: 2;
   margin: 0 1rem;
@@ -75,11 +83,22 @@ body {
 .content #projects #projects-text {
   text-shadow: 4px 4px 4px rgba(243, 235, 235, 0.2);
   color: #f1f0e8;
-  font-family: "Acme", sans-serif;
+  font-family: "ABeeZee", sans-serif;
+  font-style: italic;
 }
 
 .content .card .card-header {
-  background-color: #eee3cb;
+  background-color: #8cabff;
+  font-family: "ABeeZee", sans-serif;
+}
+
+.content #projects .card .card-header h1 {
+  font-family: "ABeeZee", sans-serif;
+  color: #f1f0e8;
+}
+
+.content #projects .card .card-body p {
+  font-family: "ABeeZee", sans-serif;
 }
 
 .content .card .card-body .socials-links ul {
@@ -103,6 +122,7 @@ body {
   color: #0e21a0;
 }
 
+/* Responsive desing */
 @media screen and (max-width: 600px) {
   .content {
     flex-direction: column;
