@@ -6,10 +6,13 @@ body {
 }
 
 body {
-  background-color: #512b81;
+  /* add the gif background */
+  background-image: url("../img/background.gif");
+  background-size: contain;
 }
 
 .header {
+  /* flex grid */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,13 +61,14 @@ body {
 .content #about {
   height: 11%;
   position: sticky;
-  left: 45%; /* asegura que la columna se mantenga a la derecha de la columna 1 */
+  left: 45%; /* Ensures that the column stays to the right of column 1 */
   top: 0;
   flex: 1;
 }
 
-.content #about .card-header {
-  background-color: #8cabff;
+.content #about {
+  /* background-color: #8cabff; */
+  background-color: #ffffff9e;
 }
 
 .content #about .card-header h1 {
@@ -87,8 +91,12 @@ body {
   font-style: italic;
 }
 
+.content #projects .card {
+  background-color: #ffffff9e;
+}
+
 .content .card .card-header {
-  background-color: #8cabff;
+  background-color: #040d12;
   font-family: "ABeeZee", sans-serif;
 }
 
