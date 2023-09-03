@@ -21,21 +21,24 @@ body {
   margin-top: 1rem;
 }
 
-#principalTitle {
+.header #principalTitle {
   text-decoration: none;
   text-shadow: 4px 4px 4px rgba(243, 235, 235, 0.2);
   color: #f1f0e8;
   font-family: "ABeeZee", sans-serif;
+  text-align: center;
+  flex: 1;
 }
 
 .header #logo {
-  margin-left: 40%;
   position: relative;
+  flex: 2;
+  padding-left: 20rem;
 }
 
 .header #logo img {
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
   top: 0;
   left: 0;
   animation: rotate 5s linear infinite;
@@ -59,16 +62,12 @@ body {
 }
 
 .content #about {
+  background-color: #ffffff9e;
   height: 11%;
   position: sticky;
   left: 45%; /* Ensures that the column stays to the right of column 1 */
   top: 0;
   flex: 1;
-}
-
-.content #about {
-  /* background-color: #8cabff; */
-  background-color: #ffffff9e;
 }
 
 .content #about .card-header h1 {
@@ -139,6 +138,7 @@ body {
     order: -1;
     position: static;
     margin-bottom: 2rem;
+    height: 600px;
   }
 
   .header {
@@ -149,14 +149,11 @@ body {
   .header #logo {
     margin-left: 0;
     position: relative;
+    padding-left: 0;
   }
   .header #logo img {
     width: 110px;
     height: 110px;
-  }
-
-  .content #about {
-    height: 600px;
   }
 }
 
@@ -178,6 +175,7 @@ body {
   .header #logo {
     margin-left: 0;
     position: relative;
+    padding-left: 0;
   }
   .header #logo img {
     width: 110px;

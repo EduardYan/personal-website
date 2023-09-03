@@ -5,7 +5,7 @@ AOS.init({
 });
 
 function handleScroll() {
-  var element = document.querySelector("#projects-text");
+  let element = document.querySelector("#projects-text");
 
   if (isElementInViewport(element)) {
     //maquine writer effect
@@ -30,7 +30,7 @@ function handleScroll() {
 
 // Helper function to check if an element is visible in the current window
 function isElementInViewport(element) {
-  var rect = element.getBoundingClientRect();
+  let rect = element.getBoundingClientRect();
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
