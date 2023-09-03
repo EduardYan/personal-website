@@ -1,7 +1,7 @@
 //aos effects
 AOS.init({
   easing: "ease-out-back",
-  duration: 1500,
+  duration: 1000,
 });
 
 function handleScroll() {

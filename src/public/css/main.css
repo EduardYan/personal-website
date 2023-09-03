@@ -7,7 +7,7 @@ body {
 
 body {
   /* add the gif background */
-  background-image: url("../img/background.gif");
+  background-image: url("../img/background.jpg");
   background-size: contain;
 }
 
@@ -127,6 +127,10 @@ body {
 
 .content .card .card-body .socials-links ul li a #facebook-link {
   color: #0e21a0;
+}
+
+footer p {
+  font-family: "ABeeZee", sans-serif;
 }
 
 /* Responsive desing */
