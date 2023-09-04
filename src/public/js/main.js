@@ -46,3 +46,15 @@ if (window.innerWidth <= 1024) {
 } else {
   handleScroll();
 }
+
+//light and dark mode listener
+const btnSwitch = document.getElementById("switch");
+
+btnSwitch.addEventListener("click", () => {
+  document.body.classList.toggle("light");
+  document.querySelector(".content #about").classList.toggle("light");
+  document.querySelector(".content #projects").classList.toggle("light");
+  document
+    .querySelector(".content #projects .card .card-footer a")
+    .classList.toggle("light");
+});

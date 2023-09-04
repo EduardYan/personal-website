@@ -1,0 +1,72 @@
+/* Styles for the light mode  */
+
+body.light {
+  background-image: url("../img/background-light.png");
+}
+
+body.light .header #principalTitle {
+  color: #000000;
+}
+
+.content #about.light {
+  background-color: #f1f0e8;
+}
+.content #about.light .card-header {
+  background-color: #fff3da;
+}
+.content #about.light .card-header h1 {
+  color: #000000;
+}
+
+.content #about.light .card-body p {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.content #about.light .card-body p:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #ffffdd;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.content #about.light .card-body p:hover:before,
+.content #about.light .card-body p:focus:before,
+.content #about.light .card-body p:active:before {
+  right: 0;
+}
+
+.content #projects.light #projects-text {
+  color: #000000;
+}
+
+.content #projects.light .card {
+  background-color: #f1f0e8;
+}
+
+.content #projects.light .card .card-header {
+  background-color: #fff3da;
+}
+
+.content #projects.light .card .card-header h1 {
+  color: #000000;
+}
+
+.content #projects.light .card .card-footer a {
+  background-color: #7091f5;
+  border-color: #98aff4;
+}

@@ -54,6 +54,12 @@ body {
   }
 }
 
+.header .form-check {
+  font-size: 1.5rem;
+  flex: 3;
+  margin-left: 3rem;
+}
+
 .content {
   display: flex;
   align-items: flex-start;
@@ -138,6 +144,7 @@ footer p {
   .content {
     flex-direction: column;
   }
+
   .content #about {
     order: -1;
     position: static;
@@ -150,14 +157,21 @@ footer p {
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
   }
+
   .header #logo {
     margin-left: 0;
     position: relative;
     padding-left: 0;
   }
+
   .header #logo img {
     width: 110px;
     height: 110px;
+  }
+
+  .header .form-check {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -165,6 +179,7 @@ footer p {
   .content {
     flex-direction: column;
   }
+
   .content #about {
     order: -1;
     position: static;
@@ -176,13 +191,19 @@ footer p {
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
   }
+
   .header #logo {
     margin-left: 0;
     position: relative;
     padding-left: 0;
   }
+
   .header #logo img {
     width: 110px;
     height: 110px;
+  }
+  .header .form-check {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
   }
 }
