@@ -1,6 +1,6 @@
 //Principal routes
 
-const {Router} = require("express");
+const { Router } = require("express");
 
 const router = Router();
 
@@ -9,7 +9,7 @@ router.get("/", (req, res) => {
 });
 
 router.get("/about", (req, res) => {
-  return res.render("about")
-})
+  return res.render("about");
+});
 
 module.exports = router;
