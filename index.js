@@ -21,4 +21,4 @@ app.use("/public", express.static(path.join(__dirname, "src/public")));
 const principalRoutes = require("./src/routes/principal");
 app.use(principalRoutes);
 
-app.listen(app.get("port"));
+app.listen(app.get("port"), "0.0.0.0");
