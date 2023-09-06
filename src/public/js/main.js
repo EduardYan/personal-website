@@ -1,11 +1,11 @@
 //aos effects
 AOS.init({
   easing: "ease-out-back",
-  duration: 1000,
+  duration: 1500,
 });
 
 function handleScroll() {
-  let element = document.querySelector("#projects-text");
+  var element = document.querySelector("#projects-text");
 
   if (isElementInViewport(element)) {
     //maquine writer effect
@@ -30,7 +30,7 @@ function handleScroll() {
 
 // Helper function to check if an element is visible in the current window
 function isElementInViewport(element) {
-  let rect = element.getBoundingClientRect();
+  var rect = element.getBoundingClientRect();
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
@@ -46,15 +46,3 @@ if (window.innerWidth <= 1024) {
 } else {
   handleScroll();
 }
-
-//light and dark mode listener
-const btnSwitch = document.getElementById("switch");
-
-btnSwitch.addEventListener("click", () => {
-  document.body.classList.toggle("light");
-  document.querySelector(".content #about").classList.toggle("light");
-  document.querySelector(".content #projects").classList.toggle("light");
-  document
-    .querySelector(".content #projects .card .card-footer a")
-    .classList.toggle("light");
-});

@@ -1,23 +1,17 @@
 <%- include("./partials/headerLayout.ejs"); %>
 
-<section class="header">
-  <div>
-    <a class="display-2 text-center hvr-grow" id="principalTitle" href="/"
-      >Eduardo Yanes</a
-    >
-  </div>
-  <div id="logo" data-aos="slide-left">
-    <img src="public/img/logo.png" alt="logoImage" />
-  </div>
+  <section class="header">
+    <div>
+      <a class="display-2 text-center hvr-grow" id="principalTitle" href="/">Eduardo Yanes</a>
+    </div>
+    <div id="logo" class="hvr-grow">
+      <img src="public/img/logo.png" alt="logoImage">
+    </div>
+  </section>
 
-  <div class="form-check form-switch">
-    <input class="form-check-input" type="checkbox" id="switch" checked />
-  </div>
-</section>
+  <section class="content">
+    <%- include("./partials/projects.ejs") %>
+      <%- include("./partials/about.ejs") %>
+  </section>
 
-<section class="content">
-  <%- include("./partials/projects.ejs") %> <%- include("./partials/about.ejs")
-  %>
-</section>
-
-<%- include("./partials/footerLayout.ejs") %>
+  <%- include("./partials/footerLayout.ejs") %>
